@@ -1,0 +1,15 @@
+{
+  "name": "plexus-metadata",
+  "version": "1.0.0",
+  "description": "Plexus apps metadata",
+  "scripts": {
+    "generate": "npx plexus gen-json-meta -b src -o ./gen",
+    "generate:electron:consumer": "npx plexus gen-ts -b src -i electron_consumer.interop -o ./gen/electron",
+    "validate": "npx plexus validate -b src --verbose > validate.txt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@plexus-interop/cli": "^0.19.1"
+  }
+}

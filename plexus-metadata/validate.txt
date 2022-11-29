@@ -1,0 +1,5 @@
+[validate] Validating input args []
+[validate] Starting execution []
+Using Java executable from env variable /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin/java
+[validate] No validation errors found []
+[validate] Completed successfully []

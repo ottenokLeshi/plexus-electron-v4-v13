@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package base;
+
+
+message UniqueId {
+    fixed64 lo = 1;
+    fixed64 hi = 2;
+}

@@ -1,0 +1,7 @@
+package base;
+
+import "base/app_registration_service.proto";
+
+application AppRegistration {
+    consumes base.AppRegistrationService { RegisterInstanceId; } from base.AppLifecycleManager
+}

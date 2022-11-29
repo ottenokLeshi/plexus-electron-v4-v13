@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package base;
+
+service AppRegistrationService {
+    rpc RequestInstanceId (RequestInstanceIdRequest) returns (UniqueId);
+    rpc RegisterInstanceId (RegisterInstanceIdRequest) returns (RegisterInstanceIdResponce);
+}
+
+message RequestInstanceIdRequest {
+    UniqueId app_instance_id = 1;
+}
+
+message RegisterInstanceIdRequest {
+    string greeting = 1;
+}
+
+message RegisterInstanceIdResponce {}
+
+
+message UniqueId {
+    fixed64 lo = 1;
+    fixed64 hi = 2;
+}

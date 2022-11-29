@@ -1,0 +1,7 @@
+import "base/greeting_service.proto";
+
+package base.electron;
+
+application Consumer {
+    consumes GreetingService { GetGreeting; } from base.web.* as WebGreetingService;
+}
